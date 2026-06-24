@@ -1,11 +1,12 @@
 {
-    "hash": "e95d171241c6ca36bb5f32ff530bf0ea",
+    "hash": "ab4d755d9209ff4206eb9969131e1f9e",
     "m_ability_details": "6948264767294594e8a7dc25cc293b62",
     "m_chapter_quests": "6c0e697e00129995abc7af22c846f49c",
     "m_character_action_skills": "f5cd857c2f81391d1f8696ef5155340d",
     "m_character_profiles": "d8fe3d8362dac6ab6803834d1c2479f8",
     "m_dictionary_non_player_characters": "add5d8aaf596f1a303f66f56b5902113",
     "m_enchantment_details": "00d3566ef6af32e34c049363f138e677",
+    "m_enemy_skills": "1d25abcc554eb1c6dc6f738c07cea8af",
     "m_gacha_group_movies": "ced66600aa00cc3213a302358536b2c9",
     "m_missions": "78a1c7cb1eedbc6fc70f6975f81c6a22",
     "m_nether_code_category_skills": "55b1119eedcfb7484332263256bc20bd",
