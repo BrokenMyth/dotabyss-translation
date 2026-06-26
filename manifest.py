@@ -46,39 +46,13 @@ class Manifest:
     def _static_file(self) -> Path:
         return self._file(self.STATIC_TYPE)
 
-    def build_static_bundle(self) -> dict[str, dict[str, str]]:
-        bundle: dict[str, dict[str, str]] = {}
-        for category in self.CONTENT_TYPES:
-            path = self._file(category)
-            if path.exists():
-                bundle[category] = json.loads(path.read_text(encoding="utf-8"))
-        return bundle
-
-    def update_static_bundle(self) -> Path | None:
-        bundle = self.build_static_bundle()
-        if not bundle:
-            return None
-
-        output = self._static_file()
-        output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(
-            json.dumps(
-                bundle,
-                ensure_ascii=False,
-                sort_keys=True,
-                separators=(",", ":"),
-            ),
-            encoding="utf-8",
-        )
-        return output
-
     def build(self):
-        static_file = self.update_static_bundle()
+        static_file = self._static_file()
         manifest: dict[str, Any] = {
             t: file_hash(f) for t in self.CONTENT_TYPES if (f := self._file(t)).exists()
         }
 
-        if static_file is not None:
+        if static_file.exists():
             manifest[self.STATIC_TYPE] = file_hash(static_file)
 
         manifest["novels"] = {
