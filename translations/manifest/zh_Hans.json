@@ -1,5 +1,5 @@
 {
-    "hash": "0b1201136d4cb475148f4eaa995eec00",
+    "hash": "1b0d5ce265c15cabe45bee0d1bb39073",
     "m_ability_details": "d940f599919c5a5c97e10e5e03fdec77",
     "m_buff_types": "1fd5e223a0af0346964b675eaba29a42",
     "m_chapter_quests": "9ff36223e3d2824bf3e971249bdd710e",
@@ -866,5 +866,5 @@
         "men_10770100003": "f74ac5bda4853eeb374d93a4790f4d77"
     },
     "static": "f6a69d2a91ea6e898a43d1ffbcf8c73a",
-    "ui_texts": "8670c7107c4d36fc2b50e1a91267e40f"
+    "ui_texts": "a04ddd1dd34dbf77d2aa298becfc87f8"
 }
